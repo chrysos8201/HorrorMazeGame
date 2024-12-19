@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="기획서">
+      <UniqueIdentifier>{e0b87532-d153-40b6-acf7-87ccecdfafa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure">
+      <UniqueIdentifier>{df4587fc-eb98-419f-9919-da7e58dc4221}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{59940f8f-7a0d-4685-b6fc-fbd27409a2d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Algorithm">
+      <UniqueIdentifier>{9c253f24-52e9-41bd-9e0f-8b378ce6adfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Creature">
+      <UniqueIdentifier>{c00c303c-4790-4a63-ba5c-42cc7d6dedaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{dbdd72eb-9382-4402-a6f8-a46b530b15c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Manager">
+      <UniqueIdentifier>{a5f15e2a-6af2-4423-8ae1-fbad4d591eb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{fc4b87ed-ed2d-41e5-9c84-bed866d48b66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Item">
+      <UniqueIdentifier>{a0009ed2-3c86-49e9-941b-9b4dad730768}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="plan.txt">
+      <Filter>기획서</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PriorityQueue.c">
+      <Filter>DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.c">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Queue.c">
+      <Filter>DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.c">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="MyError.c" />
+    <ClCompile Include="Astar.c">
+      <Filter>Algorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="HashMap.c">
+      <Filter>DataStructure</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.c">
+      <Filter>Creature</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.c">
+      <Filter>Creature</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.c">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.c">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeManager.c">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.c">
+      <Filter>Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Item_Compass.c">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="SoundManager.c">
+      <Filter>Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="PathManager.c">
+      <Filter>Manager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PriorityQueue.h">
+      <Filter>DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Queue.h">
+      <Filter>DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="MyError.h" />
+    <ClInclude Include="Astar.h">
+      <Filter>Algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="HashMap.h">
+      <Filter>DataStructure</Filter>
+    </ClInclude>
+    <ClInclude Include="Struct.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Creature</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Creature</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Item_Compass.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="SoundManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="PathManager.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

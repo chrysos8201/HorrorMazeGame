@@ -1,0 +1,144 @@
+해야할 것
+
+Astar에 필요한 것..?
+우선순위 큐 c로 구현...
+
+
+
+///hash 테스트용
+
+	HashMap* asd = createHashMap(HASH_KEY);
+	Pos p4 = { 1, 2 };
+	Pos p5 = { 2, 2 };
+	Pos p6 = { 2, 2 };
+	Pos p7 = { 3,4 };
+	Pos p8 = { 5,6 };
+	Pos p9 = { 7,8 };
+	put(asd, p4, p5);
+	put(asd, p5, p6);
+	put(asd, p6, p7);
+	put(asd, p7, p8);
+	/*Pos gp = get(asd, p8);
+	Pos gp2 = get(asd, p7);
+	Pos gp3 = get(asd, p6);
+	printf("%d, %d\n", gp.y, gp.x);
+	printf("%d, %d\n", gp2.y, gp2.x);
+	printf("%d, %d\n", gp3.y, gp3.x);*/
+
+	while (1)
+	{
+		Path[PathIndex] = p4;
+
+		Pos parentPos = get(asd, p4);
+		printf("%d %d\n", p4.y, p4.x);
+		// 시작점은 자신이 곧 부모이다.
+		if (PosOperator_IsSame(p4, parentPos))
+		{
+			break;
+		}
+
+		p4 = parentPos;
+		PathIndex++;
+	}
+
+	//Pos p3 = get(asd, p5);
+	//printf("%d, %d\n", p3.y, p3.x);
+
+
+
+
+
+
+
+
+
+	Enemy
+	Player 구현
+	
+	일단 2d로?
+
+
+
+
+
+	4월 18일 까지 한 것
+	큐, 우선순위 큐, 해시맵, A* 구현
+
+	Player 와 Enemy 구현 중
+	Enemy에 집중하는 중
+
+
+	//////
+
+
+
+
+	4.21 해야하는 것
+
+	우선순위 ?
+	- Enemy 플레이어 찾기
+		- 이게 애매한게 벽이 막혀있으면 찾지 못하여야 함.
+			- 그냥 일정 범위 내의 플레이어가 있으면 Find로 바꾸고 그 위치에 도착하였을 때 다시 Find를 돌리면 될 듯?
+
+	- Enemy 화면에 출력
+		- 각 포지션에 맞는 Enemy를 그리고 위치 조정을 해주어야 함
+	
+	- 사운드
+		- Player의 발자국 소리
+		- Enemy의 거리에 따른 노래 소리 조절
+
+	- 메인화면
+
+	- UI
+		- 시간이 되면 Item을 추가할수도...
+		- Item이 없으면 나침반을 오른쪽 상단에 추가할 것 같음.
+
+
+
+	4.23
+	(구현 목록)
+		Enemy가 Player를 찾을 수 있음
+		Enemy 화면에 출력 함
+
+
+	4.24
+	(앞으로 해야할 것)
+		메인메뉴 (완료)
+		종료화면 (완료)
+		나침반 추가
+
+		fmod 사운드 
+
+		제일 후순위 - 맵 만들기
+	(앞으로 해야할 것)
+		나침반 추가
+		fmod 추가
+
+
+	4.25
+	(앞으로 해야할 것)
+		BGM 반복재생
+
+
+	4.26
+	(앞으로 해야 할 것)
+		
+		시간되면 나침반(완)
+		헤드셋 충전하기
+		맵 만들기
+		탈출구 만들기
+
+
+	DIR UP ->    n
+				w e
+				 s
+
+	DIR RIGHT -> e
+				n s
+				 w
+	DIR DOWN -> s
+			   e w
+				n
+	DIR LEFT -> w
+			   s n
+			    e
